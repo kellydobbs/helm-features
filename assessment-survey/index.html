@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+<table id="survey">
+  <tr>
+     <td>
+      How many partners in your business? 
+    </td>
+  </tr>
+  <tr>
+    <td>
+         <select name="partners" id="partners">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">More Than Three</option>
+          </select>
+    </td>
+    </tr>
+  <tr>
+     <td>
+      Business Value:  
+    </td>
+  </tr>
+    <tr>
+    <td>
+         <select name="value" id="value">
+            <option value="1">Less Than 1 Million</option>
+            <option value="2">1 - 5 Million</option>
+            <option value="3">More Than 5 Million</option>
+            <option value="4">I Don't Know</option>
+          </select>
+    </td>
+    </tr>
+    <tr>
+     <td>
+      Are any partners key employees of the business?
+    </td>
+    <tr>
+    <td> 
+      <input type="radio" id="keyEmployees" name="keyEmployees" value="null" hidden checked/>
+      <input type="radio" id="keyEmployees" name="keyEmployees" value="yes">
+      <label for="yes">Yes</label>
+      <input type="radio" id="keyEmployees" name="keyEmployees" value="no">
+      <label for="no">No</label>
+    </td>
+    <tr>
+  </tr>
+  <tr>
+     <td>
+      Does the business own key person insurance on any employees/owners?
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <input type="radio" id="insurance" name="insurance" value="null" hidden checked>
+      <input type="radio" id="insurance" name="insurance" value="yes" >
+      <label for="yes">Yes</label>
+      <input type="radio" id="insurance" name="insurance" value="no" >
+      <label for="no">No</label>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <button type="submit" value="submit" id="submit" onclick = processSurvey()>Submit</button>
+    </td>
+  </tr>
+    <tr>
+      <td <p id="errors"></p>
+        </td>
+    </tr>
+
+</table>
+    <br>
+    <div id="results"></div>
+    <br>
+    <br>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
